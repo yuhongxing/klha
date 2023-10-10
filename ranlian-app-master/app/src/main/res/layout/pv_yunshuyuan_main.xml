@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_blue">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="198dp"
+            android:layout_height="198dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="33dp"
+            android:src="@mipmap/login_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/mykucun_container"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="41dp"
+            android:src="@mipmap/ic_ysy_kucun"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_order"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginEnd="78dp"
+            android:src="@mipmap/ic_ysy_yunshudan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mykucun_container" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="库存"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/mykucun_container"
+            app:layout_constraintStart_toStartOf="@+id/mykucun_container"
+            app:layout_constraintTop_toBottomOf="@+id/mykucun_container" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="运输单"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btn_order"
+            app:layout_constraintStart_toStartOf="@+id/btn_order"
+            app:layout_constraintTop_toBottomOf="@+id/btn_order" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_yuanjiao_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32">
+
+            <ImageView
+                android:id="@+id/btn_md_ck"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="75dp"
+                android:src="@mipmap/ic_cz_diaochu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView34"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="供应站出库"
+                app:layout_constraintEnd_toEndOf="@+id/btn_md_ck"
+                app:layout_constraintStart_toStartOf="@+id/btn_md_ck"
+                app:layout_constraintTop_toBottomOf="@+id/btn_md_ck" />
+
+
+            <ImageView
+                android:id="@+id/btn_cz_ck"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/ic_ysy_czchuku"
+                app:layout_constraintEnd_toEndOf="@+id/btn_md_ck"
+                app:layout_constraintStart_toStartOf="@+id/btn_md_ck"
+                app:layout_constraintTop_toTopOf="@+id/btn_cz_rk" />
+
+            <TextView
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充装站出库"
+                app:layout_constraintEnd_toEndOf="@+id/btn_cz_ck"
+                app:layout_constraintStart_toStartOf="@+id/btn_cz_ck"
+                app:layout_constraintTop_toTopOf="@+id/textView43" />
+
+            <ImageView
+                android:id="@+id/btn_cz_rk"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/ic_ysy_czruku"
+                app:layout_constraintEnd_toEndOf="@+id/btn_md_rk"
+                app:layout_constraintStart_toStartOf="@+id/btn_md_rk"
+                app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+            <TextView
+                android:id="@+id/textView43"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="充装站入库"
+                app:layout_constraintEnd_toEndOf="@+id/btn_cz_rk"
+                app:layout_constraintStart_toStartOf="@+id/btn_cz_rk"
+                app:layout_constraintTop_toBottomOf="@+id/btn_cz_rk" />
+
+            <ImageView
+                android:id="@+id/btn_md_rk"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="60dp"
+                android:src="@mipmap/ic_cz_diaoru"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView42"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="供应站入库"
+                app:layout_constraintEnd_toEndOf="@+id/btn_md_rk"
+                app:layout_constraintStart_toStartOf="@+id/btn_md_rk"
+                app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+
+            <ImageView
+                android:id="@+id/xiugaigangping_container"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_daike_xiadan"
+                app:layout_constraintEnd_toEndOf="@+id/btn_cz_rk"
+                app:layout_constraintHorizontal_bias="0.423"
+                app:layout_constraintStart_toStartOf="@+id/btn_cz_rk"
+                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="修改气瓶"
+                app:layout_constraintEnd_toEndOf="@+id/xiugaigangping_container"
+                app:layout_constraintStart_toStartOf="@+id/xiugaigangping_container"
+                app:layout_constraintTop_toBottomOf="@+id/xiugaigangping_container" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

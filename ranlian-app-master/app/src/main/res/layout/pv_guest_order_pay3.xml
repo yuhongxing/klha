@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/title_container"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/bg_blue">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/title_order_pay"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+        <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/title_height"
+                android:layout_height="@dimen/title_height"
+                android:background="@drawable/sel_pressed"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back"/>
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_gray">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+            <!-- 订单号 -->
+            <TextView
+                    android:id="@+id/tv_tip"
+                    style="@style/order_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/title_height"
+                    android:paddingLeft="10dp"
+                    android:text=""></TextView>
+
+            <ImageView
+                    android:id="@+id/iv_scan"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0"
+            android:background="#eeeeee"
+            android:padding="10dp">
+
+        <!-- 收费方式 -->
+        <include
+            layout="@layout/view_paymethod"/>
+
+        <LinearLayout
+                android:layout_marginTop="35dp"
+                android:id="@+id/container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/btn_print"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sel_btn_blue"
+                    android:text="打印订单"
+                    android:textColor="@android:color/white"/>
+
+            <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sel_btn_blue"
+                    android:text="@android:string/ok"
+                    android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

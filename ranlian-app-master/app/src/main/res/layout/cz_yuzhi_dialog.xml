@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88888888">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/bg_blue"
+            android:gravity="center"
+            android:text="预置信息"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="规格" />
+
+            <Spinner
+                android:id="@+id/sp_guige"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"></Spinner>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_dark" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="型号" />
+
+            <Spinner
+                android:id="@+id/sp_leixing"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"></Spinner>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_dark"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/title_init_weight" />
+
+            <EditText
+                android:id="@+id/et_pizhong"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:inputType="numberDecimal"></EditText>
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="KG" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_dark" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="固定编号" />
+
+            <EditText
+                android:id="@+id/et_prefix"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:inputType="textCapWords"
+                android:maxLength="15"
+                android:singleLine="true"></EditText>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_dark" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/title_qiti_type" />
+
+            <Spinner
+                android:id="@+id/et_qiti"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:inputType="textCapWords"
+                android:maxLength="10"
+                android:singleLine="true"></Spinner>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_dark" />
+
+        <LinearLayout
+            android:id="@+id/line_yvzhi_changjia"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/title_chang_jia" />
+
+            <Spinner
+                android:id="@+id/et_changjia"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:inputType="textCapWords"
+                android:maxLength="10"
+                android:singleLine="true"></Spinner>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_dark" />
+
+        <LinearLayout
+            android:id="@+id/line_yvzhi_shengchanriqi"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="生产日期" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/order_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:hint="点击选择"
+                android:singleLine="true"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_dark" />
+
+        <LinearLayout
+
+            android:id="@+id/line_yvzhi_changdu"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="钢印长度" />
+
+            <EditText
+                android:id="@+id/tv_gy_min"
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:text="12"></EditText>
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text=" - " />
+
+            <EditText
+                android:id="@+id/tv_gy_max"
+                style="@style/order_text"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:text="12"></EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_dark" />
+
+        <LinearLayout
+
+            android:id="@+id/line_yvzhi_jianyanriqi"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="上次检验时间" />
+
+            <TextView
+                android:id="@+id/tv_shangCiJianYan_time"
+                style="@style/order_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:hint="旧瓶请点击选择"
+                android:singleLine="true"></TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray_dark" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sel_btn_border"
+                android:text="@android:string/cancel"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sel_btn_blue"
+                android:text="@android:string/ok"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

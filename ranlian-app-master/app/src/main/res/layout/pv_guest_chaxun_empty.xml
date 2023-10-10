@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/bg_blue">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="查询气瓶"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:background="@drawable/sel_pressed"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/tip_no_nfc"
+        android:textColor="#ff0000"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/rg_id"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_nfc_id"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/title_nfc" />
+
+        <RadioButton
+            android:id="@+id/rb_gp_id"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title_gp_id" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_gray_dark" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sel_btn_blue"
+            android:gravity="center"
+            android:text="@android:string/ok"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/btn_ok"
+            android:background="@null"
+            android:enabled="false"
+            android:hint="@string/tip_input_80" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_gray_dark" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="气瓶信息："
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_gangping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="气瓶号：HD00001 ；  规格：15kg"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_xinpian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="芯片号：asdf"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_jiandang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建档日期：2018-12-12"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_baofei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报废日期：2025-12-12"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_gengxinriqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更新日期："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_zuihou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最后位置："
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/gridLayout_goods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/bg_gray"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowCount="2">
+
+                <TextView
+                    android:layout_columnWeight="1"
+                    android:layout_margin="1dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="状态" />
+
+                <TextView
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="余气状态" />
+
+                <TextView
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="场站" />
+
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="." />
+
+                <TextView
+                    android:id="@+id/tv_ping"
+                    android:layout_columnWeight="1"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="." />
+
+                <TextView
+                    android:id="@+id/tv_changzhan"
+                    android:layout_columnWeight="1"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="." />
+
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/tv_kehu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="客户信息："
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/line_kehu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名：张三"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编号："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话：18880008880"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型：非商业"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址：？？？"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_gongyingzhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="供应站：？？？"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_kaihu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开户日期：2018-12-12"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dddddd">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/rl_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_msg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_msg_no" />
+
+            <TextView
+                android:id="@+id/btn_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFBFBFBF"
+                android:text="@string/title_msg"
+                android:textSize="10sp" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/btn_msg"-->
+            <!--                android:layout_width="fill_parent"-->
+            <!--                android:layout_height="fill_parent"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:background="@drawable/sel_pressed_drak"-->
+            <!--                android:drawableTop="@mipmap/ic_msg_no"-->
+            <!--                android:gravity="center"-->
+            <!--                android:paddingTop="5dp"-->
+            <!--                android:text="@string/title_msg"-->
+            <!--                android:textColor="@android:color/black" />-->
+
+            <TextView
+                android:id="@+id/tv_msg_cnt"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/image_msg"
+                android:background="@drawable/bg_round_red"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_app"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_app"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_app_yes" />
+
+            <TextView
+                android:id="@+id/btn_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFBFBFBF"
+                android:text="@string/title_app"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+        <!--        <TextView-->
+        <!--            android:id="@+id/btn_app"-->
+        <!--            android:layout_width="fill_parent"-->
+        <!--            android:layout_height="fill_parent"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@drawable/sel_pressed_drak"-->
+        <!--            android:drawableTop="@mipmap/ic_app_yes"-->
+        <!--            android:gravity="center"-->
+        <!--            android:paddingTop="5dp"-->
+        <!--            android:text="@string/title_app"-->
+        <!--            android:textColor="@android:color/black" />-->
+
+
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/image_setting"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_setting_no" />
+
+            <TextView
+                android:id="@+id/btn_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="#FFBFBFBF"
+                android:text="@string/title_setting"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/btn_setting"-->
+        <!--            android:layout_width="fill_parent"-->
+        <!--            android:layout_height="fill_parent"-->
+        <!--            android:layout_weight="1"-->
+
+        <!--            android:background="@drawable/sel_pressed_drak"-->
+        <!--            android:drawableTop="@mipmap/ic_setting_no"-->
+        <!--            android:gravity="center"-->
+        <!--            android:paddingTop="5dp"-->
+        <!--            android:text="@string/title_setting"-->
+        <!--            android:textColor="@android:color/black" />-->
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pv_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"></FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"
+        android:background="@color/bg_gray" />
+</RelativeLayout>

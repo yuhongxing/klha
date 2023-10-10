@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <RelativeLayout
+        android:id="@+id/btn_md_rk"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/sp_yuan"
+        app:layout_constraintEnd_toStartOf="@+id/btn_md_ck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/gyz_ruku" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_md_ck"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/sp_yuan"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/btn_md_rk">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/gyz_chuku" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mykucun_container"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/sp_yuan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_md_ck"
+        app:layout_constraintTop_toTopOf="@+id/btn_md_ck">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/kucun" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="供应站入库"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_16"
+        app:layout_constraintEnd_toEndOf="@+id/btn_md_rk"
+        app:layout_constraintStart_toStartOf="@+id/btn_md_rk"
+        app:layout_constraintTop_toBottomOf="@+id/btn_md_rk" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="供应站出库"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_16"
+        app:layout_constraintEnd_toEndOf="@+id/btn_md_ck"
+        app:layout_constraintStart_toStartOf="@+id/btn_md_ck"
+        app:layout_constraintTop_toBottomOf="@+id/btn_md_ck" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="我的库存"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_16"
+        app:layout_constraintEnd_toEndOf="@+id/mykucun_container"
+        app:layout_constraintStart_toStartOf="@+id/mykucun_container"
+        app:layout_constraintTop_toBottomOf="@+id/mykucun_container" />
+
+    <RelativeLayout
+        android:id="@+id/btn_cz_ck"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/sp_yuan"
+        app:layout_constraintEnd_toEndOf="@+id/btn_md_ck"
+        app:layout_constraintStart_toStartOf="@+id/btn_md_ck"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/czz_chuku" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="充装站出库"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_16"
+        app:layout_constraintEnd_toEndOf="@+id/btn_cz_ck"
+        app:layout_constraintStart_toStartOf="@+id/btn_cz_ck"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cz_ck" />
+
+    <RelativeLayout
+        android:id="@+id/btn_cz_rk"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/sp_yuan"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cz_ck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_cz_ck">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/czz_ruku" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="充装站入库"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_16"
+        app:layout_constraintEnd_toEndOf="@+id/btn_cz_rk"
+        app:layout_constraintStart_toStartOf="@+id/btn_cz_rk"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cz_rk" />
+
+    <RelativeLayout
+        android:id="@+id/btn_order"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/sp_yuan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cz_ck"
+        app:layout_constraintTop_toTopOf="@+id/btn_cz_ck">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/yunshudan" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="我的运输单"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_16"
+        app:layout_constraintEnd_toEndOf="@+id/btn_order"
+        app:layout_constraintStart_toStartOf="@+id/btn_order"
+        app:layout_constraintTop_toBottomOf="@+id/btn_order" />
+
+    <RelativeLayout
+        android:id="@+id/xiugaigangping_container"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/sp_yuan"
+        app:layout_constraintEnd_toEndOf="@+id/btn_cz_rk"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_cz_rk"
+        app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_daike_xiadan" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="修改气瓶"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_16"
+        app:layout_constraintEnd_toEndOf="@+id/xiugaigangping_container"
+        app:layout_constraintStart_toStartOf="@+id/xiugaigangping_container"
+        app:layout_constraintTop_toBottomOf="@+id/xiugaigangping_container" />
+
+</android.support.constraint.ConstraintLayout>

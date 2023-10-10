@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/bg_blue">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/title_zhejiudan"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:background="@drawable/sel_pressed"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/iv_contact"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sel_pressed"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_dialog_info"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#eeeeee"
+        android:padding="10dp">
+
+
+        <Button
+
+            android:id="@+id/btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0"
+            android:background="@drawable/sel_btn_blue"
+            android:text="@android:string/ok"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/main_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/container"
+        android:layout_below="@id/title_container">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_40dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@id/sp_type"
+                    android:gravity="center"
+                    android:text="@string/title_type"
+                    android:textColor="@color/bg_gray_dark" />
+
+                <Spinner
+                    android:id="@+id/sp_leixing"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_40dp"></Spinner>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/bg_gray"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_40dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@id/sp_type"
+                    android:gravity="center"
+                    android:text="@string/title_guige"
+                    android:textColor="@color/bg_gray_dark" />
+
+                <Spinner
+                    android:id="@+id/sp_guige"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_weight="1"></Spinner>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/sp_type"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:text="KG"
+                    android:textColor="@color/bg_gray_dark" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/bg_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_40dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@id/sp_type"
+                    android:gravity="center"
+                    android:text="残液"
+                    android:textColor="@color/bg_gray_dark" />
+
+                <EditText
+                    android:id="@+id/et_canye"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"></EditText>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/sp_type"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:text="KG"
+                    android:textColor="@color/bg_gray_dark" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/bg_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_40dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@id/sp_type"
+                    android:gravity="center"
+                    android:text="残液费"
+                    android:textColor="@color/bg_gray_dark" />
+
+                <EditText
+                    android:id="@+id/et_canye_fei"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"></EditText>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/sp_type"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:text="@string/title_yuan"
+                    android:textColor="@color/bg_gray_dark" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/bg_gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_40dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignTop="@id/sp_type"
+                    android:gravity="center"
+                    android:text="折旧费"
+                    android:textColor="@color/bg_gray_dark" />
+
+                <EditText
+                    android:id="@+id/et_zhejiu_fei"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/_40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"></EditText>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/sp_type"
+                    android:layout_weight="0"
+                    android:gravity="center"
+                    android:text="@string/title_yuan"
+                    android:textColor="@color/bg_gray_dark" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/bg_gray" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

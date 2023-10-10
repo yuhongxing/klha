@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:scaleType="fitCenter">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/top_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_40dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/order_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_time1"
+            style="@style/order_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:background="@android:color/black" />
+
+        <Spinner
+            android:id="@+id/sp_type"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:paddingRight="0dp"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/_40dp"
+        android:scrollingCache="false"></ListView>
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/_40dp"
+        android:gravity="center"
+        android:text="@string/tip_ptr"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/_40dp"
+        android:background="@android:color/black" />
+</FrameLayout>
+

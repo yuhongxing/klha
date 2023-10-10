@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/bg_blue">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:background="@drawable/sel_pressed"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_title" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/sel_btn_border"
+            android:text="@android:string/cancel"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/sel_btn_blue"
+            android:text="@android:string/ok"
+            android:textColor="@android:color/white"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_container"
+        android:layout_below="@id/title_container"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_client_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/tv_nfc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:padding="5dp"
+            android:textColor="#ff0000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="配送员密码：" />
+
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="充值卡密码：" />
+
+            <EditText
+                android:id="@+id/et_pass_czk"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="充值金额：" />
+
+            <EditText
+                android:id="@+id/et_money"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="元" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <include layout="@layout/view_paymethod" />
+        </FrameLayout>
+        <!-- 收费方式
+        <LinearLayout
+            android:id="@+id/pay_type_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_title_pay"
+                style="@style/order_text"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:text="支付方式：" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_xin_jin"
+                    style="@style/order_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/title_xianjin"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_wei_xin"
+                    style="@style/order_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/title_weixin"
+                    android:textSize="13sp" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+ -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp" />
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

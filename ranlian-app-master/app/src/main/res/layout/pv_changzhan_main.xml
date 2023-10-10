@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_blue">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="198dp"
+            android:layout_height="198dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="33dp"
+            android:src="@mipmap/login_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/btn_chadang"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="41dp"
+            android:src="@mipmap/ic_cz_chadang"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_jiandang"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginEnd="78dp"
+            android:src="@mipmap/ic_cz_jiandang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_chadang" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="查档"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btn_chadang"
+            app:layout_constraintStart_toStartOf="@+id/btn_chadang"
+            app:layout_constraintTop_toBottomOf="@+id/btn_chadang" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="建档"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btn_jiandang"
+            app:layout_constraintStart_toStartOf="@+id/btn_jiandang"
+            app:layout_constraintTop_toBottomOf="@+id/btn_jiandang" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_yuanjiao_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32">
+
+
+            <ImageView
+                android:id="@+id/btn_diaochu"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="24dp"
+                android:src="@mipmap/ic_cz_diaochu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView34"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="调出"
+                app:layout_constraintEnd_toEndOf="@+id/btn_diaochu"
+                app:layout_constraintStart_toStartOf="@+id/btn_diaochu"
+                app:layout_constraintTop_toBottomOf="@+id/btn_diaochu" />
+
+            <ImageView
+                android:id="@+id/btn_diaoru"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="42dp"
+                android:src="@mipmap/ic_cz_diaoru"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_diaochu" />
+
+            <ImageView
+                android:id="@+id/btn_chongzhuangqian"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/ic_cz_jiancha"
+                app:layout_constraintStart_toStartOf="@+id/btn_genghuan"
+                app:layout_constraintTop_toTopOf="@+id/btn_xiugai" />
+
+            <ImageView
+                android:id="@+id/btn_xiugai"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="24dp"
+                android:src="@mipmap/ic_cz_xiugai"
+                app:layout_constraintEnd_toEndOf="@+id/textView35"
+                app:layout_constraintStart_toStartOf="@+id/textView35"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+            <ImageView
+                android:id="@+id/btn_shandang"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/ic_cz_shandang"
+                app:layout_constraintEnd_toEndOf="@+id/btn_baofei"
+                app:layout_constraintTop_toTopOf="@+id/btn_songjian" />
+
+            <ImageView
+                android:id="@+id/btn_genghuan"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/ic_cz_genghuan"
+                app:layout_constraintStart_toStartOf="@+id/btn_diaoru"
+                app:layout_constraintTop_toTopOf="@+id/btn_songjian" />
+
+            <ImageView
+                android:id="@+id/btn_songjian"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="24dp"
+                android:src="@mipmap/ic_cz_songjian"
+                app:layout_constraintEnd_toEndOf="@+id/textView34"
+                app:layout_constraintStart_toStartOf="@+id/textView34"
+                app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+            <TextView
+                android:id="@+id/textView35"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="送检"
+                app:layout_constraintEnd_toEndOf="@+id/btn_songjian"
+                app:layout_constraintStart_toStartOf="@+id/btn_songjian"
+                app:layout_constraintTop_toBottomOf="@+id/btn_songjian" />
+
+            <ImageView
+                android:id="@+id/btn_baofei"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="42dp"
+                android:src="@mipmap/ic_cz_baofei"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_diaochu" />
+
+            <TextView
+                android:id="@+id/textView36"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="调入"
+                app:layout_constraintEnd_toEndOf="@+id/btn_diaoru"
+                app:layout_constraintStart_toStartOf="@+id/btn_diaoru"
+                app:layout_constraintTop_toBottomOf="@+id/btn_diaoru" />
+
+            <TextView
+                android:id="@+id/textView37"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="报废"
+                app:layout_constraintEnd_toEndOf="@+id/btn_baofei"
+                app:layout_constraintStart_toStartOf="@+id/btn_baofei"
+                app:layout_constraintTop_toBottomOf="@+id/btn_baofei" />
+
+            <TextView
+                android:id="@+id/textView38"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="更换芯片"
+                app:layout_constraintEnd_toEndOf="@+id/btn_genghuan"
+                app:layout_constraintStart_toStartOf="@+id/btn_genghuan"
+                app:layout_constraintTop_toBottomOf="@+id/btn_genghuan" />
+
+            <TextView
+                android:id="@+id/textView39"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="删档"
+                app:layout_constraintEnd_toEndOf="@+id/btn_shandang"
+                app:layout_constraintStart_toStartOf="@+id/btn_shandang"
+                app:layout_constraintTop_toBottomOf="@+id/btn_shandang" />
+
+            <TextView
+                android:id="@+id/textView40"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="充装检查"
+                app:layout_constraintEnd_toEndOf="@+id/btn_chongzhuangqian"
+                app:layout_constraintStart_toStartOf="@+id/btn_chongzhuangqian"
+                app:layout_constraintTop_toBottomOf="@+id/btn_chongzhuangqian" />
+
+            <TextView
+                android:id="@+id/textView41"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="修改气瓶"
+                app:layout_constraintEnd_toEndOf="@+id/btn_xiugai"
+                app:layout_constraintStart_toStartOf="@+id/btn_xiugai"
+                app:layout_constraintTop_toBottomOf="@+id/btn_xiugai" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>

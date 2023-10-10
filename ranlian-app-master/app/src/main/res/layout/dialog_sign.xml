@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88ffffff"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/bg_blue">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:background="@drawable/sel_pressed"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:gravity="center"
+            android:text="@string/title_sign"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <com.czsy.ui.fingerpaint.FingerPaintView
+        android:layout_width="fill_parent"
+        android:id="@+id/finger_view"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/bg_gray"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sel_btn_border"
+            android:text="@string/title_reset"
+            android:textColor="@color/bg_blue" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sel_btn_blue"
+            android:text="@android:string/ok"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</LinearLayout>

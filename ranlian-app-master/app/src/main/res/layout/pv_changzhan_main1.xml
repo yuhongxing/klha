@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/btn_chadang"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/sp_yuan"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/chaxun" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_diaoru"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/sp_yuan"
+                app:layout_constraintEnd_toStartOf="@+id/btn_diaochu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_diaochu">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/diaoru" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_jiandang"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/sp_yuan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/btn_chadang">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/jiandang" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_diaochu"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/sp_yuan"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/diaochu" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_baofei"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/sp_yuan"
+                app:layout_constraintEnd_toEndOf="@+id/btn_diaochu"
+                app:layout_constraintStart_toStartOf="@+id/btn_diaochu"
+                app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/baofei" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_shandang"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/sp_yuan"
+                app:layout_constraintEnd_toEndOf="@+id/btn_diaoru"
+                app:layout_constraintStart_toStartOf="@+id/btn_diaoru"
+                app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/shandang" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_songjian"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/sp_yuan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_diaochu"
+                app:layout_constraintTop_toTopOf="@+id/btn_diaochu">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/songjian" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_genghuan"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/sp_yuan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_baofei"
+                app:layout_constraintTop_toTopOf="@+id/btn_baofei">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/genghuanxinpian" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_chongzhuangqian"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/sp_yuan"
+                app:layout_constraintEnd_toEndOf="@+id/btn_shandang"
+                app:layout_constraintStart_toStartOf="@+id/btn_shandang"
+                app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/chakan" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/bg_gray"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="查档"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_chadang"
+                app:layout_constraintStart_toStartOf="@+id/btn_chadang"
+                app:layout_constraintTop_toBottomOf="@+id/btn_chadang" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="调入"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_diaoru"
+                app:layout_constraintStart_toStartOf="@+id/btn_diaoru"
+                app:layout_constraintTop_toBottomOf="@+id/btn_diaoru" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="建档"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_jiandang"
+                app:layout_constraintStart_toStartOf="@+id/btn_jiandang"
+                app:layout_constraintTop_toBottomOf="@+id/btn_jiandang" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="调出"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_diaochu"
+                app:layout_constraintStart_toStartOf="@+id/btn_diaochu"
+                app:layout_constraintTop_toBottomOf="@+id/btn_diaochu" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="报废"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_baofei"
+                app:layout_constraintStart_toStartOf="@+id/btn_baofei"
+                app:layout_constraintTop_toBottomOf="@+id/btn_baofei" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="删档"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_shandang"
+                app:layout_constraintStart_toStartOf="@+id/btn_shandang"
+                app:layout_constraintTop_toBottomOf="@+id/btn_shandang" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="送检"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_songjian"
+                app:layout_constraintStart_toStartOf="@+id/btn_songjian"
+                app:layout_constraintTop_toBottomOf="@+id/btn_songjian" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="更换芯片"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_genghuan"
+                app:layout_constraintStart_toStartOf="@+id/btn_genghuan"
+                app:layout_constraintTop_toBottomOf="@+id/btn_genghuan" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="充装检查"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_chongzhuangqian"
+                app:layout_constraintStart_toStartOf="@+id/btn_chongzhuangqian"
+                app:layout_constraintTop_toBottomOf="@+id/btn_chongzhuangqian" />
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+
+            <RelativeLayout
+                android:id="@+id/btn_xiugai"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/sp_yuan"
+                app:layout_constraintEnd_toEndOf="@+id/btn_baofei"
+                app:layout_constraintStart_toStartOf="@+id/btn_baofei"
+                app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/chakan" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="修改气瓶"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_xiugai"
+                app:layout_constraintStart_toStartOf="@+id/btn_xiugai"
+                app:layout_constraintTop_toBottomOf="@+id/btn_xiugai" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

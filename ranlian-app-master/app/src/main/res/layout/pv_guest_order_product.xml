@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/bg_blue">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/title_height"
+            android:layout_height="@dimen/title_height"
+            android:background="@drawable/sel_pressed"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/title_guest_order"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/title_container"
+        android:background="@color/bg_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/title_client_info"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tv_client_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/tv_client_info"
+        android:background="@color/bg_gray"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/title_product_info"
+        android:textColor="@android:color/black" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0"
+        android:background="#eeeeee"
+        android:padding="10dp">
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/sel_btn_blue"
+            android:text="@android:string/ok"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

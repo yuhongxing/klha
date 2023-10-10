@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <integer name="anim_duration">150</integer>
+
+    <dimen name="txt_16">16sp</dimen>
+    <dimen name="txt_18">18sp</dimen>
+    <dimen name="txt_14">14sp</dimen>
+    <dimen name="txt_12">12sp</dimen>
+    <dimen name="txt_10">10sp</dimen>
+
+    <dimen name="btn_corner">12dp</dimen>
+    <dimen name="txt_title">20sp</dimen>
+
+
+    <color name="border_blue">#0C5CA9</color>
+    <color name="bg_blue">#FF238CFC</color>
+    <color name="bg_gray">#dddddd</color>
+    <color name="bg_gray_dark">#888888</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+
+
+    <color name="tv_bold_black">#FF212121</color>
+    <color name="tv_bold_black33">#FF333333</color>
+    <color name="tv_bold_black0504">#ff030504</color>
+    <color name="tv_gray_light">#FFBFBFBF</color>
+    <color name="tv_gray_deep">#FF999999</color>
+    <color name="tv_green">#FF13CE9B</color>
+    <color name="xian">#FFEEEEEE</color>
+    <color name="bg_page">#FFF7F9FC</color>
+
+    <dimen name="title_height">52dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_50dp">50dp</dimen>
+
+    <!--style-->
+    <style name="transparent_dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+    <style name="order_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#1E90FF</item>
+    </style>
+
+    <style name="TextView_bold_18sp">
+        <item name="android:textColor">@color/tv_bold_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView_bold_16sp">
+        <item name="android:textColor">@color/tv_bold_black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView_bold_14sp">
+        <item name="android:textColor">@color/tv_bold_black33</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

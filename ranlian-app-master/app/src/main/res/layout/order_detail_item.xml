@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_gangpingNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="8dp"
+        android:text="气瓶号：HD100001    规格：？？"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="5dp"
+        android:text="创建日期：2001-10-10 11：32"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_leiBieName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="5dp"
+        android:text="操作类型："
+        android:textSize="16sp" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/bg_gray"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="气瓶金额"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="优惠金额"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:background="#ffffff"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center"
+            android:text="附加金额"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="实收金额"
+            android:textSize="16sp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_gp_jine"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/tv_yh_jine"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/tv_fujia_jine"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/tv_ss_jine"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="." />
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="退气"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="退气金额"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="押金"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="实收押金"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_tuiQi"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/tv_tq_jine"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/tv_yajin"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/tv_ss_yajin"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="." />
+
+
+    </GridLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bg_gray" />
+</LinearLayout>

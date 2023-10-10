@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/btn_modify"
+        style="@style/order_text"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_blue_rect"
+        android:gravity="center"
+        android:text="@string/title_modify" />
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_title"
+        style="@style/order_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_toLeftOf="@id/btn_modify"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_content"
+        style="@style/order_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_toLeftOf="@id/btn_modify"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/image_yajin"
+        android:layout_width="60dp"
+        android:layout_height="75dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/ic_input_add" />
+</RelativeLayout>

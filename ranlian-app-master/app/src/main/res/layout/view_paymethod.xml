@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pay_type_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title_pay"
+            style="@style/order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="支付方式：" />
+
+        <TextView
+            android:id="@+id/tv_czk"
+            style="@style/order_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.czsy.other.FlowRadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="12dp">
+
+        <RadioButton
+            android:id="@+id/rb_xin_jin"
+            style="@style/order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/title_xianjin"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rb_wei_xin"
+            style="@style/order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_weixin"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rb_chong_zhi_ka"
+            style="@style/order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_chognzhika"
+            android:textSize="13sp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_qiankuan"
+            style="@style/order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_qiankuang"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rb_jifen"
+            style="@style/order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_jifen"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rb_yinHangKa"
+            style="@style/order_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_yinHang"
+            android:textSize="13sp" />
+
+    </com.czsy.other.FlowRadioGroup>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">昆仑华大能源</string>
+    <string name="loading_data">数据加载中...</string>
+    <string name="title_login">登录</string>
+    <string name="tip_op_ok">操作已成功完成！</string>
+    <string name="tip_authed">已认证</string>
+    <string name="tip_crate">新建</string>
+    <string name="tip_ptr">没有数据，您可以下拉刷新</string>
+    <string name="title_his_order_search">历史订单查询</string>
+    <string name="tip_common_err">操作失败！</string>
+    <string name="tip_input_name">请输入用户名</string>
+    <string name="tip_input_pass">请输入密码</string>
+    <string name="tip_network_error">无法连接服务器</string>
+    <string name="fmt_version">当前版本: %1$s</string>
+    <string name="tip_not_auth">未授权用户！</string>
+    <string name="title_init_weight">初始重量</string>
+    <string name="title_chang_jia">生产厂家</string>
+    <string name="title_qiti_type">气体类型</string>
+    <string name="tip_gp_not_found">没有找到气瓶信息！</string>
+
+
+    <string name="tip_comment">备注信息</string>
+    <string name="tip_add_favo">收藏</string>
+    <string name="tip_remove_favo">取消收藏</string>
+    <string name="tip_chuku">气瓶回库</string>
+    <string name="tip_ruku">气瓶领取</string>
+
+    <string name="title_order_confirm">订单确认</string>
+    <string name="title_order_pay">订单收付款</string>
+    <string name="tip_order_pay">应收款: %.2f元\n收款方式：%s</string>
+    <string name="title_get_order">接单退单</string>
+    <string name="title_guest_order">代客下单</string>
+    <string name="title_upload_task">手工处理任务</string>
+    <string name="tip_upload_task">下班前手动点击上传订单/图片</string>
+    <string name="title_msg">消息</string>
+    <string name="title_app">应用</string>
+    <string name="title_setting">设置</string>
+    <string name="title_host_ping">服务器网络检测</string>
+    <string name="tip_host_ok">服务器正常</string>
+    <string name="tip_host_err">服务器访问失败，请检测网络！</string>
+    <string name="tip_use_gps">请打开GPS定位</string>
+    <string name="tip_use_nfc">请开启芯片扫描（NFC）功能</string>
+    <string name="title_scan_empty">扫空瓶</string>
+    <string name="title_scan_ping">扫瓶</string>
+    <string name="title_scan_heavy">扫重瓶</string>
+    <string name="title_client_info">客户信息</string>
+    <string name="title_product_info">商品信息</string>
+    <string name="title_product">商品</string>
+    <string name="title_nfc">芯片号</string>
+    <string name="title_amount">数量</string>
+
+    <string name="title_my_peisong">我的配送</string>
+    <string name="title_zhejiudan">回收单</string>
+    <string name="title_peisong_huizong">配送汇总</string>
+    <string name="title_tuiping">退瓶</string>
+    <string name="title_baoxiu">报修</string>
+    <string name="title_anjian_dan">安检单</string>
+    <string name="title_skip">跳过</string>
+    <string name="title_qianping_guanli">欠瓶管理</string>
+    <string name="title_qianping_dengji">欠瓶登记</string>
+    <string name="title_yajin_guanli">押金管理</string>
+    <string name="title_tuidan_chuli">退单处理</string>
+
+
+    <!-- my peisong -->
+    <string name="status_done">已完成</string>
+    <string name="status_not_done">未完成</string>
+    <string name="status_zhuanpai">已转派</string>
+    <string name="status_tuidan">已退单</string>
+
+    <string name="title_gp_id">气瓶号</string>
+    <string name="title_ping">瓶</string>
+    <string name="tip_no_nfc">未扫描到芯片</string>
+    <string name="tip_get_nfc">已扫描到芯片</string>
+    <string name="tip_input_80">请靠近芯片</string>
+
+    <string name="tip_input_gp">请输入气瓶号</string>
+    <string name="title_clear_rescan">清空重扫</string>
+    <string name="title_no_empty">无空瓶</string>
+    <string name="title_scan_done">扫描完成</string>
+    <string name="title_next_heavy">下一步扫重瓶</string>
+
+    <string name="title_search">查找</string>
+    <string name="title_phone">电话号码</string>
+    <string name="title_name">姓名</string>
+    <string name="title_client_name">客户姓名</string>
+    <string name="title_client_id">客户编号</string>
+    <string name="title_type">类型</string>
+    <string name="title_guige">规格</string>
+    <string name="title_address">地址</string>
+    <string name="title_floor">楼层</string>
+    <string name="title_reset">重置</string>
+    <string name="title_order_id">订单号</string>
+    <string name="title_last_order">上次订气</string>
+    <string name="title_last_security">上次安检</string>
+    <string name="title_insurance_info">保险信息</string>
+    <string name="tip_no_insurance_info">无保险信息</string>
+
+    <!-- -->
+    <string name="title_add_product">添加商品</string>
+    <string name="title_price">单价</string>
+    <string name="title_peisongfei">配送费</string>
+    <string name="title_shangloufei">上楼费</string>
+    <string name="title_all_peisongfei">总配送费</string>
+    <string name="title_all_price">总价</string>
+    <string name="tip_reject_reson">请输入退单原因</string>
+    <string name="tip_empty_dayu_heavy">回收空瓶数量大于重瓶数量，点击选择需要退还押金的空瓶</string>
+    <string name="tip_heavy_dayu_emtpy">点击添加押金图片</string>
+    <string name="title_yuan">元</string>
+    <string name="title_modify">修改</string>
+
+    <!--sqg order-->
+
+    <string name="title_new_order">新订单</string>
+    <string name="title_reject_order">退单</string>
+    <string name="title_call">打电话</string>
+    <string name="title_favo">收藏</string>
+    <string name="title_done">已完成</string>
+    <string name="title_not_done">未完成</string>
+    <string name="title_my_fav">收藏</string>
+    <string name="title_todo_order">待派送订单</string>
+    <string name="title_achieve">配送业绩</string>
+    <string name="tip_time">时间</string>
+    <string name="tip_take_pic">拍照</string>
+    <string name="title_sign">客户签字</string>
+    <string name="title_dengji_anjian">登记安检单</string>
+    <!-- setting -->
+    <string name="tip_about">关于送气到家</string>
+    <string name="tip_logout">退出登录</string>
+    <string name="title_no_data">无数据</string>
+    <string name="tip_exist_gp">该气瓶已存在</string>
+    <string name="tip_sur_delete">确定要删除吗？</string>
+    <string name="tip_recycle_weight">回收总重量</string>
+    <string name="tip_money_needed">应收总金额</string>
+    <string name="tip_money_real">实收总金额</string>
+    <!-- -->
+    <string name="title_xianjin">现金</string>
+    <string name="title_weixin">微信</string>
+    <string name="title_chognzhika">充值卡</string>
+    <string name="title_qiankuang">欠款</string>
+    <string name="title_jifen">积分</string>
+    <string name="title_yinHang">银行卡</string>
+    <!-- chang zhan
+    <string userAccount="title_chadang">查档</string>
+    <string userAccount="title_jiandan">建挡</string>
+    <string userAccount="title_advance">高级</string>
+    <string userAccount="title_jiancha">检查</string>
+    <string userAccount="title_linping">领瓶</string>
+    <string userAccount="tip_logout">送检</string>
+    <string userAccount="tip_about">关于送气到家</string>
+    <string userAccount="tip_logout">退出登录</string>
+    <string userAccount="tip_about">关于送气到家</string>
+    <string userAccount="tip_logout">退出登录</string>
+    <string userAccount="tip_about">关于送气到家</string>
+    <string userAccount="tip_logout">退出登录</string>-->
+
+
+    <string name="title_dingqidan">订气订单</string>
+    <string name="title_lingshoudan">商品订单</string>
+    <string name="title_weixiudan">维修订单</string>
+    <string name="title_anjiandan">安检订单</string>
+    <string name="title_tuipingdan">退瓶订单</string>
+
+    <string name="err_gp_not_heavy">这不是重瓶！</string>
+    <string name="err_gp_not_empty">这不是轻瓶！</string>
+    <string name="err_gp_bad_user">你无权操作此气瓶！</string>
+    <string name="err_gp_not_user">气瓶不属于此用户</string>
+    <string name="err_gp_not_org">气瓶不属于此单位！</string>
+
+</resources>
+

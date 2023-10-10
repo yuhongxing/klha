@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_left_weight"
+            style="@style/order_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="退气："
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_left_gas"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="0.00" />
+
+        <TextView
+
+            style="@style/order_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="KG"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_left_money"
+            style="@style/order_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="应退款："
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_left_money"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="0.00" />
+
+        <TextView
+
+            style="@style/order_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title_yuan"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_gangping_money"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_gangping_money"
+            style="@style/order_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="气瓶金额："
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_gangping_money"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="0.00" />
+
+        <TextView
+
+            style="@style/order_text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title_yuan"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sel_btn_blue"
+        android:text="@android:string/ok"
+        android:textColor="@android:color/white" />
+</LinearLayout>

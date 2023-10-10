@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88888888">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/bg_blue"
+            android:gravity="center"
+            android:text="请输入气瓶号"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/order_text"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"></TextView>
+
+
+        <EditText
+            android:id="@+id/et_input"
+            style="@style/order_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:hint="请输入气瓶号"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"></EditText>
+
+        <EditText
+            android:id="@+id/et_input1"
+            style="@style/order_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:hint="请确认气瓶号（两次一致才可建档）"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"></EditText>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_gray" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                style="@style/order_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+
+                android:paddingRight="10dp"
+                android:text="气瓶重量"></TextView>
+
+
+            <EditText
+                android:id="@+id/et_zhongliang"
+                style="@style/order_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"></EditText>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sel_btn_border"
+                android:text="@android:string/cancel"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sel_btn_blue"
+                android:text="@android:string/ok"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

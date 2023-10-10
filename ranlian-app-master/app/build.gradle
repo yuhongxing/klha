@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+
+   // useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java', 'build/generated/data_binding_base_class_source_out/devDebug/out']
+        }
+//        devDebug {
+//            java.srcDirs = ['src/main/java', 'build/generated/data_binding_base_class_source_out/devDebug/out']
+//        }
+//        prdDebug {
+//            java.srcDirs = ['src/main/java', 'build/generated/data_binding_base_class_source_out/prdDebug/out']
+//        }
+
+    }
+
+    defaultConfig {
+//        ndk {
+            //选择要添加的对应 cpu 类型的 .so 库。
+            //abiFilters 'armeabi', 'armeabi-v7a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+//        }
+
+//        manifestPlaceholders = [
+//                JPUSH_PKGNAME: "com.czsy.android",
+//                JPUSH_APPKEY : "8bc95693733400dafdeb553f", //JPush 上注册的包名对应的 Appkey.
+//                JPUSH_CHANNEL: "default", //暂时填写默认值即可.
+//        ]
+
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 32
+        versionName "2.0.5"
+        applicationId "com.czsy.android"
+    }
+
+    signingConfigs {
+        sign {
+            keyAlias 'android_app'
+            keyPassword '123123'
+            storeFile file('../123123.jks')
+            storePassword '123123'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.sign
+        }
+        debug {
+            signingConfig signingConfigs.sign
+        }
+    }
+    lintOptions {
+        //checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //dependencies { compile files('libs/jcore-android-1.27.jar')}
+    //dependencies { compile files('libs/jpush-android-3.18.jar')}
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:26.+'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:26.+'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:26.+'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    //compile 'com.baidu.mobstat:mtj-sdk:latest.integration'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation project(path: ':MPChartLib')
+}
+repositories {
+    maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+    mavenCentral()
+}

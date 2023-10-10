@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/bg_gray"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/title_container"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/bg_blue">
+
+        <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/title_height"
+                android:layout_height="@dimen/title_height"
+                android:background="@drawable/sel_pressed"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_back"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/title_anjian_dan"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:id="@+id/tv_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/sel_pressed"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/title_skip"
+                android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_client_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_blue"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+        <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:text="@string/tip_take_pic"-->
+        <!--android:textColor="@android:color/black" />-->
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/iv_sign"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+
+            <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@android:color/white">
+
+                <LinearLayout
+                        android:id="@+id/pic_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                    <ImageView
+                            android:id="@+id/iv_add"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="fitCenter"
+                            android:src="@android:drawable/ic_input_add"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/btn_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+            <Button
+                    android:id="@+id/btn_sign"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sel_btn_border"
+                    android:text="@string/title_sign"
+                    android:textColor="@color/bg_blue"/>
+
+            <Button
+                    android:id="@+id/btn_dengji"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/title_height"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sel_btn_blue"
+                    android:text="@string/title_dengji_anjian"
+                    android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingTop="10dp">
+
+        <LinearLayout
+                android:id="@+id/main_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+</LinearLayout>

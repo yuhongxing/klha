@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_blue">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="198dp"
+            android:layout_height="198dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="33dp"
+            android:src="@mipmap/login_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/btn_kucun"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="41dp"
+            android:src="@mipmap/ic_ysy_kucun"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/btn_yunshudan"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginEnd="78dp"
+            android:src="@mipmap/ic_ysy_yunshudan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_kucun" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="库存"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btn_kucun"
+            app:layout_constraintStart_toStartOf="@+id/btn_kucun"
+            app:layout_constraintTop_toBottomOf="@+id/btn_kucun" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="运输单"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btn_yunshudan"
+            app:layout_constraintStart_toStartOf="@+id/btn_yunshudan"
+            app:layout_constraintTop_toBottomOf="@+id/btn_yunshudan" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_yuanjiao_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32">
+
+            <ImageView
+                android:id="@+id/btn_huiku"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="75dp"
+                android:src="@mipmap/ic_gyzzz_huikuliebiao"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView34"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="回库列表"
+                app:layout_constraintEnd_toEndOf="@+id/btn_huiku"
+                app:layout_constraintStart_toStartOf="@+id/btn_huiku"
+                app:layout_constraintTop_toBottomOf="@+id/btn_huiku" />
+
+            <ImageView
+                android:id="@+id/btn_fenpei"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/ic_gyzzz_dingdanfenpei"
+                app:layout_constraintEnd_toEndOf="@+id/btn_shenpi"
+                app:layout_constraintStart_toStartOf="@+id/btn_shenpi"
+                app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+            <TextView
+                android:id="@+id/textView43"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="订单分配"
+                app:layout_constraintEnd_toEndOf="@+id/btn_fenpei"
+                app:layout_constraintStart_toStartOf="@+id/btn_fenpei"
+                app:layout_constraintTop_toBottomOf="@+id/btn_fenpei" />
+
+            <ImageView
+                android:id="@+id/btn_shenpi"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="60dp"
+                android:src="@mipmap/ic_gyzzz_lingqvshenpi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView42"
+                style="@style/TextView_bold_14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="领取审批"
+                app:layout_constraintEnd_toEndOf="@+id/btn_shenpi"
+                app:layout_constraintStart_toStartOf="@+id/btn_shenpi"
+                app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
